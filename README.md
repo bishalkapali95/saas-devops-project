@@ -360,3 +360,6 @@ To maintain educational clarity and avoid unnecessary cloud costs, the following
 - **Mocked Email Delivery:** Tokens are returned in the API response for demonstration purposes. In production, tokens are sent via email (AWS SES/SendGrid) and never exposed in the API response.
 - **Local Terraform Provider:** Terraform manages local configuration manifests rather than AWS/Azure cloud resources to ensure zero cost and safe local execution.
 - **Simulated Blue-Green Cutover:** The deployment step in GitHub Actions verifies container builds and prints orchestrator cutover logic without provisioning paid cloud load balancers.
+
+### Development Workflow
+This project uses GitHub Actions for automated testing, quality checks, security auditing, and deployment workflow validation.
